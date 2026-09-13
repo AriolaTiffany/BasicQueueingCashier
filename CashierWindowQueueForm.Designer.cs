@@ -41,9 +41,10 @@
             btnRefresh.BackColor = Color.PowderBlue;
             btnRefresh.FlatStyle = FlatStyle.Flat;
             btnRefresh.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRefresh.Location = new Point(16, 102);
+            btnRefresh.Location = new Point(18, 136);
+            btnRefresh.Margin = new Padding(3, 4, 3, 4);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(111, 36);
+            btnRefresh.Size = new Size(127, 48);
             btnRefresh.TabIndex = 0;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = false;
@@ -52,9 +53,10 @@
             // listCashierQueue
             // 
             listCashierQueue.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listCashierQueue.Location = new Point(145, 102);
+            listCashierQueue.Location = new Point(166, 136);
+            listCashierQueue.Margin = new Padding(3, 4, 3, 4);
             listCashierQueue.Name = "listCashierQueue";
-            listCashierQueue.Size = new Size(258, 426);
+            listCashierQueue.Size = new Size(294, 567);
             listCashierQueue.TabIndex = 1;
             listCashierQueue.UseCompatibleStateImageBehavior = false;
             listCashierQueue.View = View.List;
@@ -63,9 +65,10 @@
             // 
             btnNext.FlatStyle = FlatStyle.Flat;
             btnNext.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNext.Location = new Point(16, 144);
+            btnNext.Location = new Point(18, 192);
+            btnNext.Margin = new Padding(3, 4, 3, 4);
             btnNext.Name = "btnNext";
-            btnNext.Size = new Size(111, 36);
+            btnNext.Size = new Size(127, 48);
             btnNext.TabIndex = 2;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = true;
@@ -76,9 +79,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Gill Sans Ultra Bold", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(12, 29);
+            label3.Location = new Point(14, 39);
             label3.Name = "label3";
-            label3.Size = new Size(401, 39);
+            label3.Size = new Size(501, 48);
             label3.TabIndex = 6;
             label3.Text = "Cashier Window Queue";
             // 
@@ -88,14 +91,15 @@
             // 
             // CashierWindowQueueForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(428, 558);
+            ClientSize = new Size(541, 744);
             Controls.Add(label3);
             Controls.Add(btnNext);
             Controls.Add(listCashierQueue);
             Controls.Add(btnRefresh);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "CashierWindowQueueForm";
             Text = "CashierWindowQueueForm";
             ResumeLayout(false);

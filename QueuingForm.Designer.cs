@@ -42,9 +42,10 @@
             btnCashier.BackColor = Color.PowderBlue;
             btnCashier.FlatStyle = FlatStyle.Popup;
             btnCashier.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCashier.Location = new Point(35, 76);
+            btnCashier.Location = new Point(40, 101);
+            btnCashier.Margin = new Padding(3, 4, 3, 4);
             btnCashier.Name = "btnCashier";
-            btnCashier.Size = new Size(111, 100);
+            btnCashier.Size = new Size(127, 133);
             btnCashier.TabIndex = 0;
             btnCashier.Text = "Cashier";
             btnCashier.UseVisualStyleBackColor = false;
@@ -54,11 +55,11 @@
             // 
             lblQueue.AutoSize = true;
             lblQueue.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblQueue.Location = new Point(43, 48);
+            lblQueue.Location = new Point(43, 65);
             lblQueue.Name = "lblQueue";
-            lblQueue.Size = new Size(49, 25);
+            lblQueue.Size = new Size(162, 31);
             lblQueue.TabIndex = 1;
-            lblQueue.Text = "P - ";
+            lblQueue.Text = "X - XXXXX ";
             lblQueue.Click += btnCashier_Click;
             // 
             // label1
@@ -66,9 +67,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkRed;
-            label1.Location = new Point(35, 192);
+            label1.Location = new Point(40, 256);
             label1.Name = "label1";
-            label1.Size = new Size(127, 15);
+            label1.Size = new Size(154, 18);
             label1.TabIndex = 2;
             label1.Text = "*Click to get a number";
             // 
@@ -76,9 +77,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(26, 14);
+            label2.Location = new Point(30, 19);
             label2.Name = "label2";
-            label2.Size = new Size(160, 24);
+            label2.Size = new Size(204, 29);
             label2.TabIndex = 3;
             label2.Text = "Position in Queue";
             // 
@@ -87,9 +88,10 @@
             panel1.BackColor = Color.LightCyan;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(lblQueue);
-            panel1.Location = new Point(166, 76);
+            panel1.Location = new Point(190, 101);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(218, 100);
+            panel1.Size = new Size(249, 133);
             panel1.TabIndex = 4;
             // 
             // label3
@@ -97,22 +99,23 @@
             label3.AutoSize = true;
             label3.Font = new Font("Gill Sans Ultra Bold", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DarkRed;
-            label3.Location = new Point(76, 34);
+            label3.Location = new Point(137, 49);
             label3.Name = "label3";
-            label3.Size = new Size(254, 39);
+            label3.Size = new Size(194, 48);
             label3.TabIndex = 5;
-            label3.Text = "Queuing Form";
+            label3.Text = "Queuing";
             // 
             // QueuingForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
-            ClientSize = new Size(416, 245);
+            ClientSize = new Size(475, 327);
             Controls.Add(label3);
             Controls.Add(panel1);
             Controls.Add(label1);
             Controls.Add(btnCashier);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "QueuingForm";
             Text = "QueuingForm";
             panel1.ResumeLayout(false);
