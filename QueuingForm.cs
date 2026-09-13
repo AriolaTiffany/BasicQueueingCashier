@@ -5,6 +5,7 @@ namespace BasicQueueingCashier
     {
         private CashierClass cashier;
         private CashierWindowQueueForm cashierWindow;
+        private ServingForm servingWindow;
         public QueuingForm()
         {
             InitializeComponent();
@@ -12,6 +13,9 @@ namespace BasicQueueingCashier
 
             cashierWindow = new CashierWindowQueueForm();
             cashierWindow.Show();
+
+            servingWindow = new ServingForm();
+            servingWindow.Show();
         }
         private void btnCashier_Click(object sender, System.EventArgs e)
         {
