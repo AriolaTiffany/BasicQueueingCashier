@@ -11,11 +11,6 @@ namespace BasicQueueingCashier
             InitializeComponent();
             cashier = new CashierClass();
 
-            cashierWindow = new CashierWindowQueueForm();
-            cashierWindow.Show();
-
-            servingWindow = new ServingForm();
-            servingWindow.Show();
         }
         private void btnCashier_Click(object sender, System.EventArgs e)
         {
@@ -25,6 +20,17 @@ namespace BasicQueueingCashier
 
             CashierClass.CashierQueue.Enqueue(CashierClass.getNumberInQueue);
 
+            if (cashierWindow == null || cashierWindow.IsDisposed)
+            {
+                cashierWindow = new CashierWindowQueueForm();
+                cashierWindow.Show();
+            }
+
+            if (servingWindow == null || servingWindow.IsDisposed)
+            {
+                servingWindow = new ServingForm();
+                servingWindow.Show();
+            }
         }
     }
 }
